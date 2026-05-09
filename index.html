@@ -1,59 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DSP Project</title>
-    <style>
-        body {
-            background: #0f1117;
-            color: white;
-            text-align: center;
-            font-family: Arial;
-            padding: 40px;
-        }
+<meta charset="UTF-8">
+<title>DSP Project</title>
 
-        h1 { color: #00ffcc; }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: #0b0f19;
+        color: white;
+        text-align: center;
+    }
 
-        .btn {
-            display: block;
-            margin: 12px auto;
-            padding: 14px;
-            width: 260px;
-            background: #1f2937;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-        }
+    h1 {
+        color: #00ffcc;
+        margin-top: 30px;
+    }
 
-        .btn:hover {
-            background: #00ffcc;
-            color: black;
-        }
+    p {
+        color: #aaa;
+    }
 
-        img {
-            width: 320px;
-            border-radius: 10px;
-            margin: 20px;
-        }
-    </style>
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 280px;
+        margin: 12px auto;
+        padding: 14px;
+        background: #1f2937;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background: #00ffcc;
+        color: black;
+    }
+
+    img {
+        width: 320px;
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #000;
+    }
+
+    .section {
+        margin-top: 30px;
+    }
+
+    .box {
+        background: #111827;
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        border-radius: 12px;
+    }
+
+    pre {
+        text-align: left;
+        background: #000;
+        padding: 15px;
+        border-radius: 10px;
+        overflow-x: auto;
+        color: #00ffcc;
+    }
+</style>
+
 </head>
 
 <body>
 
 <h1>DSP Audio Signal Analysis</h1>
-
 <p>Real-time sound processing using Arduino & Python</p>
 
+<div class="container">
+
+<!-- Banner -->
 <img src="./banar.jpeg">
 
-<a class="btn" href="./Technical_Report.pdf" target="_blank">📄 Technical Report</a>
+<!-- Buttons -->
+<a class="btn" href="./technical_report.pdf" target="_blank">📄 View Report</a>
 
-<a class="btn" href="./Audio Signal Analysis for Emotion.pptx" target="_blank">🖥️ PowerPoint</a>
+<a class="btn" href="./audio_presentation.pptx" target="_blank">🖥️ View Presentation</a>
 
-<a class="btn" href="./arduino_code.ino" target="_blank">🔌 Arduino Code</a>
+<a class="btn" href="./recording.mp4" target="_blank">🎥 Watch Demo Video</a>
 
-<a class="btn" href="./python_gui.py" target="_blank">🐍 Python Code</a>
+<a class="btn" href="./login.jpeg" target="_blank">🔐 Login Screen</a>
 
-<a class="btn" href="./Recording 2026-05-09 030735" target="_blank">🎥 Demo Video</a>
+<!-- Python Code (عرض) -->
+<div class="box">
+<h2>🐍 Python Code</h2>
+<pre>
+# python_gui.py
+import serial
+import tkinter as tk
+import numpy as np
+import matplotlib.pyplot as plt
+</pre>
+
+<a class="btn" 
+href="https://raw.githubusercontent.com/YOUR_USERNAME/dsp-project/main/python_gui.py" 
+target="_blank">
+View Full Python Code
+</a>
+</div>
+
+<!-- Arduino Code -->
+<div class="box">
+<h2>🔌 Arduino Code</h2>
+<pre>
+const int micPin = A0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int val = analogRead(micPin);
+  Serial.println(val);
+}
+</pre>
+
+<a class="btn"
+href="https://raw.githubusercontent.com/YOUR_USERNAME/dsp-project/main/arduino_code.ino"
+target="_blank">
+View Full Arduino Code
+</a>
+</div>
+
+</div>
 
 </body>
 </html>
