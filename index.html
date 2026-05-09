@@ -6,34 +6,37 @@
 
 <style>
 body{
+    margin:0;
+    font-family:Arial;
     background:#0b0f19;
     color:white;
     text-align:center;
-    font-family:Arial;
 }
 
-h1{color:#00ffcc;}
+h1{
+    color:#00ffcc;
+    margin-top:30px;
+}
+
+p{
+    color:#aaa;
+}
 
 .btn{
     display:block;
-    width:260px;
+    width:270px;
     margin:12px auto;
     padding:14px;
     background:#1f2937;
     color:white;
     text-decoration:none;
     border-radius:10px;
+    transition:0.3s;
 }
 
 .btn:hover{
     background:#00ffcc;
     color:black;
-}
-
-img{
-    width:300px;
-    border-radius:10px;
-    margin:15px;
 }
 </style>
 
@@ -42,33 +45,24 @@ img{
 <body>
 
 <h1>DSP Audio Signal Analysis</h1>
+<p>Real-time sound processing using Arduino & Python</p>
 
-<img src="./banar.jpeg">
+<!-- كل الملفات Download عادي -->
 
-<!-- PDF -->
-<a class="btn" href="./technical_report.pdf" target="_blank">📄 View Report</a>
+<a class="btn" href="./technical_report.pdf" download>📄 Download Report</a>
 
-<!-- PPT (Download فقط) -->
-<a class="btn" href="./audio_presentation.pptx">🖥️ Download Presentation</a>
+<a class="btn" href="./audio_presentation.pptx" download>🖥️ Download Presentation</a>
 
-<!-- Video -->
-<a class="btn" href="./recording.mp4">🎥 Watch Demo Video</a>
+<a class="btn" href="./recording.mp4" download>🎥 Download Demo Video</a>
 
-<!-- Login image -->
-<a class="btn" href="./login.jpeg" target="_blank">🔐 View Login</a>
+<a class="btn" href="./python_gui.py" download>🐍 Download Python Code</a>
 
-<!-- Python Code (RAW GitHub) -->
-<a class="btn" href="https://raw.githubusercontent.com/YOUR_USERNAME/dsp-project/main/python_gui.py" target="_blank">
-🐍 View Python Code
-</a>
+<a class="btn" href="./arduino_code.ino" download>🔌 Download Arduino Code</a>
 
-<!-- Arduino Code -->
-<a class="btn" href="https://raw.githubusercontent.com/YOUR_USERNAME/dsp-project/main/arduino_code.ino" target="_blank">
-🔌 View Arduino Code
-</a>
+<a class="btn" href="./login.jpeg" download>🔐 Download Login Image</a>
 
-<!-- Banner as button -->
-<a class="btn" href="./banar.jpeg" target="_blank">🖼️ View Banner</a>
+
+<a class="btn" href="./banar.jpeg" download>🖼️ Download Banner</a>
 
 </body>
 </html>
